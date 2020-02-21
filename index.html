@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+  <header class="header-main">
+    <a href="index.html">
+      <img class="logo" src="img/device.svg" width="140" height="71" alt="Логотип DEVICE">
+    </a>
+    <div class="header-top">
+      <form class="search-site" action="https://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+        <input class="search-site-input" type="text" name="search" id="search-input" placeholder="Поиск по сайту">
+        <button class="search-site-button" type="submit">Найти</button>
+      </form>
+      <ul class="users">
+        <li class="users-item"><a class="users-link users-link-enter" href="#">Войти</a></li>
+        <li class="users-item users-item-compare"><a class="users-link users-link-compare" href="#">Сравнить</a></li>
+        <li class="users-item"><a class="users-link users-link-cart" href="#">Корзина</a></li>
+      </ul>
+    </div>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-item menu-item-catalog"><a class="menu-link" href="#">Каталог товаров</a>
+          <button class="open-catalog-button" type="submit"></button>
+          <ul class="catalog-list">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для&nbsp;селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a class="menu-link" href="#">Доставка</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Гарантия</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Главная страница интернет магазина Device</h1>
+    <section class="slider">
+      <ol>
+        <li>
+          <div class="picture">
+            <img src="img/slider-self-stick.png" width="384" height="486" alt="Селфи-палка">
+          </div>
+          <h2>Делай селфи, как Бен Стиллер! </h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+          <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a href="catalog.html">Подробнее</a>
+          <table>
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <th>Длина палки</th>
+              <th>Вес палки</th>
+              <th>Материал</th>
+            </tr>
+          </table>
+        </li>
+        <li></li>
+        <li></li>
+      </ol>
+
+    </section>
+
+    <section class="catalog">
+      <ul class="catalog-list">
+        <li><a href="#">Виртуальная реальность</a></li>
+        <li><a href="catalog.html">Моноподы для&nbsp;селфи</a></li>
+        <li><a href="#">Экшн-камеры</a></li>
+        <li><a href="#">Фитнес-браслеты</a></li>
+        <li><a href="#">Умные часы</a></li>
+        <li><a href="#">Квадрокоптеры</a></li>
+      </ul>
+    </section>
+    <section class="services">
+      <ul>
+        <li>
+          <button type="button">Доставка</button>
+          <div class="servise-delivery">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+        </li>
+        <li><button type="button">Гарантия</button></li>
+        <li><button type="button">Кредит</button></li>
+      </ul>
+    </section>
+    <section class="brands-product">
+      <ul>
+        <li>
+          <a href="catalog.html">
+            <img src="img/logo-dji1.png" alt="DJI" width="260" height="100" title="Товары компании DJI">
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="img/logo-sp1.png" alt="DJI" width="260" height="100" title="Товары компании SP-gadgets">
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="img/logo-gopro1.png" alt="DJI" width="260" height="100" title="Товары компании GO PRO">
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <img src="img/logo-vive1.png" alt="DJI" width="260" height="100" title="Товары компании Vive">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about-us">
+      <h2>О нас</h2>
+      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+        компаниями:</p>
+      <ul>
+        <li>Деловые линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
+      </ul>
+      <a href="#">Подробнее о нас</a>
+    </section>
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
+        бывает.</p>
+      <img src="img/map.png" alt="Адрес на карте: Москва, ул. Строителей, д.15">
+      <button>Напишите нам</button>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend class="visually-hidden">Напишите нам</legend>
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="your-name" id="name">
+
+          <label for="mail">Ваш e-mail:</label>
+          <input type="email" name="your-mail" id="mail" placeholder="Поиск по сайту">
+
+          <label for="leter">Текст письма:</label>
+          <textarea name="text-leter" id="leter" rows="10">В свободной форме</textarea>
+          <button type="submit">Отправить</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+</body>
+
 </html>
