@@ -1,10 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="55" viewBox="0 0 55 55">
-  <defs>
-    <style>
-      .cls-1 {
-        opacity: 0.5;
-      }
-    </style>
-  </defs>
-  <image id="modal-close" class="cls-1" width="55" height="55" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAYAAACo29JGAAAEmUlEQVRogeWaz2tdRRTHP7lpixKoYxoUqy3NQi0WZmPUxUgX2i4S6aKBqFSk9h/wj3GnC6sopbXQgmK7aHEhnY1GFwMVi4tEYiNKEsdCUPorcsJ5j/debl7eezM3P56fzeW+mTk539yZuXPOPQNkJnq7FzgE7Af2AcPAELAHKICHwF1gGVgCFoF5YNa4cCenN1nERW9FhAWOACMJphaAm0AwLiym+pUkLno7ChwFRlMdKWEG+Na4MNOrgZ7ERW9lyo0DB3r9w10wB1w1Lsx3O7ArcdFbWTfHgbFcU7pDVoBp4JpxQdZrR3TsYPT2SWAqcU2lImvyonHhj2ziorcvAJPAri0UVuM+cMm48NNGHTcUF719CZjY5Gm4ETJNrxgXvm/Xr63DKuyNzfS6S75uJ7BYr0Gn4sQ2ENCOCfWzlFJxunlMbrOpWIb4N6n+rmGNON3up7bJ5tEJ4ueU+t1E2ZM7vsXbfS+MqN9NNInTk8fYTlBTwpj6X6f1yY3vgHW2HgPqf526OD0Eb8ZZsUoOqI5VGp/c0YQ/+ntmh7s+JDdQ17EqTuOxXsMWb1z4UMKTBIcakTDnI7Hb4/hR1VN/cjbBGRO9HTQufANcT7AjXBc7Yk/sJthZ1VMTdyTBkIx9M3q7y7hwQ858PdqRs+INsSP2MvhEoTmP1Pfa88A70dvdxoXvgC/1cNsJ0u8rGSfjxY7aS2FEdBWazMmBrNl3o7ePGBd+BC53IFDaLxsXfpBxMj5jyuJQoVmqXBxUgY8aFwJwAXiwjm35/YL0k/4q7GBGX/YXmn7LydPAmejtkHHhZ+A8cK/Fvtyfl3bpJ/11XE72FZpXzM0TKnCvceEX4FyDQLmek991vZ/R/rkZLjRhWgWySb0XvX1c03OfAn/LVe7ld2mv8JA+VGgmuCqG9QkOGxd+Az6Qq9zrE6ti1tTYU7SLxjMhU++t6O2AceGBXOVef6+Sopa7r5I7uiuu6ElmRXfRrN8FSnhY6EeJqpAPHR8bF5ait88A78tV7oGz2l4Vdwv92lIFkkD9xLgQNQw5DTwmV7k3Lvwl7dqvCpaLiv57f8qTkU9S0dtngVPAbm2T66no7XP6yeqs9s/NUqHfx3JyW4UtR28PA283CKNBoGwyh6WfCryd2Y/FIjEwbOVX4DPjwj/RW6u74uA6fQdVoJX+Mk7H52JexM1mMiYv6s+NC/9Gb18ETnaQj5H2k9Jfxsl4tZOD2ULnfeqivqXC7kVvXwZOdJFokn4norevyHgVeCvRnwXRVXuB30wwJGO/0Bf0qwkp+HEZL3bEXgaf6qeTkGAoqrDXgGMJdoRj0dvXVWBMsLOqpz51orenEwJFyX49leBMK/MJceaMcUEO6U3nypTsVU5hJAbQdR11cRqWzCW7tbXMNVY/tEYEV7tI7Gw3VtT/Ok3itBxieoeKm24t5yiL5a5VeJitigX1u4k14rTO46JWDewE7mv5xprQrTQK1zqPSztg/a1o2UZpXcq6KQat8+g1Nb5ZXGlXj/L/rUOp0bcVRDX6tvarRt9W7TXSl/WWrfRlpWwrfVnjXMa2qU4H/gOrU8EW2WTAaAAAAABJRU5ErkJggg=="/>
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+    <path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
 </svg>
