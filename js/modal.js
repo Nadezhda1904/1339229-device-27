@@ -4,19 +4,19 @@ var popup = document.querySelector(".modal-write-us");
 var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector("form");
-var name = popup.querySelector("[name=your-name]");
-var mail = popup.querySelector("[name=your-mail]");
+var yourName = popup.querySelector("[name=your-name]");
+var yourEmail = popup.querySelector("[name=your-mail]");
 var text = popup.querySelector("[name=text-leter]");
 
 var input = popup.querySelectorAll("input");
 
 var isStorageSupport = true;
 var storageName = "";
-var storageMail = "";
+var storageEmail = "";
 
 try {
-  storageName = localStorage.getItem("name");
-  storageMail = localStorage.getItem("mail");
+  storageName = localStorage.getItem("your-name");
+  storageEmail = localStorage.getItem("your-mail");
 
 } catch (err) {
   isStorageSupport = false;
@@ -25,31 +25,38 @@ try {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-
-  if (storage) {
-    name.value = storageName;
+  yourName.focus();
+  if (storageName) {
+    yourName.value = storageName;
+    yourEmail.focus();
   }
-  if (storage) {
-    mail.value = storageMail;
+  if (storageEmail) {
+    yourEmail.value = storageEmail;
+    text.focus();
   }
 
 });
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
+  for (var i = 0; i < input.length; i++) {
+    input[i].classList.remove("modal-error-input");
+  }
+  popup.classList.remove("modal-error");
   popup.classList.remove("modal-show");
 });
 
-
 form.addEventListener("submit", function (evt) {
-  for (var i = 0; i < input.length; i++) {
-    if (name.value==="" || mail.value === "") {
+  popup.classList.remove("modal-error");
+   for (var i = 0; i < input.length; i++) {
+    if (input[i].value === "") {
       evt.preventDefault();
-      input[i].classList.add("modal-error");
+      input[i].classList.add("modal-error-input");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
-        localStorage.setItem("name", name.value);
-        localStorage.setItem("mail", mail.value);
+        localStorage.setItem(input[i].getAttribute("name"), input[i].value);
       }
     }
   }
@@ -64,7 +71,6 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
 
 var mapLink = document.querySelector(".contacts-map-link");
 

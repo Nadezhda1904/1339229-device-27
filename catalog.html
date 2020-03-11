@@ -29,22 +29,21 @@
     <nav class="menu">
       <ul class="menu-list">
         <li class="menu-item menu-item-catalog">
-          <a class="menu-link" href="#">Каталог товаров</a>
+          <a class="menu-link" href="catalog.html">Каталог товаров</a>
 
-          <ul class="menu-catalog-list">
-            <div class="menu-catalog-container">
-              <li class="menu-catalog-item"><a class="menu-catalog-link" href="#">Виртуальная реальность</a></li>
-              <li class="menu-catalog-item"><a class="menu-catalog-link" href="catalog.html">Моноподы для&nbsp;селфи</a></li>
-              <li class="menu-catalog-item"><a class="menu-catalog-link" href="#">Экшн-камеры</a></li>
-            </div>
-            <div class="menu-catalog-container">
-              <li class="menu-catalog-item"><a class="menu-catalog-link" href="#">Фитнес-браслеты</a></li>
-              <li class="menu-catalog-item"><a class="menu-catalog-link" href="#">Умные часы</a></li>
-            </div>
-            <div class="menu-catalog-container">
-            <li class="menu-catalog-item menu-catalog-copter"><a class="menu-catalog-link" href="#">Квадрокоптеры</a>
+          <ul class="sub-menu">
+            <li class="sub-menu-item">
+              <a class="sub-menu-link" href="#">Виртуальная реальность</a>
+              <a class="sub-menu-link" href="catalog.html">Моноподы для&nbsp;селфи</a>
+              <a class="sub-menu-link" href="#">Экшн-камеры</a>
             </li>
-          </div>
+            <li class="sub-menu-item">
+              <a class="sub-menu-link" href="#">Фитнес-браслеты</a>
+              <a class="sub-menu-link" href="#">Умные часы</a>
+            </li>
+            <li class="sub-menu-item sub-menu-copter">
+              <a class="sub-menu-link" href="#">Квадрокоптеры</a>
+            </li>
           </ul>
         </li>
         <li class="menu-item"><a class="menu-link" href="#">Доставка</a></li>
@@ -88,28 +87,28 @@
             <fieldset class="filter-color">
               <legend>Цвет</legend>
               <ul class="color-list">
-                <li class="filter-option color-item">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="black"
                     id="filter-black" checked>
                   <label class="form-check" for="filter-black">Черный</label>
                 </li>
-                <li class="filter-option color-item">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="white"
                     id="filter-white">
                   <label class="form-check" for="filter-white">Белый</label>
                 </li>
-                <li class="filter-option color-item">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="blue"
                     id="filter-blue" checked>
                   <label class="form-check" for="filter-blue">Синий</label>
                 </li>
-                <li class="filter-option color-item">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="red"
                     id="filter-red" checked>
                   <label class="form-check" for="filter-red">Красный</label>
                 </li>
-                <li class="filter-option color-item">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pink"
                     id="filter-pink">
                   <label class="form-check" for="filter-pink">Розовый</label>
                 </li>
@@ -119,13 +118,13 @@
             <fieldset class="bluetooth-option">
               <legend>Bluetooth</legend>
               <ul class="bluetooth-list">
-                <li class="filter-option bluetooth-item">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth"
                     value="have" id="filter-have" checked>
                   <label class="form-radio" for="filter-have">Есть</label>
                 </li>
-                <li class="filter-option filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth"
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth"
                     value="no-have" id="filter-no-have">
                   <label class="form-radio" for="filter-no-have">Нет</label>
                 </li>
@@ -198,7 +197,7 @@
               </div>
               <div class="products-price">
                 <a class="products-price-link" href="#">
-                  <h3>Профессиональная</br>селфи-палка</h3>
+                  <h3>Профессиональная<br>селфи-палка</h3>
                 </a>
                 <p class="products-price-price">1 500 руб.</p>
               </div>
@@ -241,13 +240,13 @@
 
           <div class="pagination">
             <ul class="pagination-list">
-              <li class="pagination-item-prev"><a class="paginator-link page-prev" href>Назад</a></li>
-              <li class="pagination-item"><a class="paginator-link paginator-link-current" href
+              <li class="pagination-item-prev"><a class="paginator-link page-prev" href="#">Назад</a></li>
+              <li class="pagination-item"><a class="paginator-link paginator-link-current" href="#"
                   aria-label="Страница 1">1</a></li>
-              <li class="pagination-item"><a class="paginator-link" href aria-label="Страница 2">2</a></li>
-              <li class="pagination-item"><a class="paginator-link" href aria-label="Страница 3">3</a></li>
-              <li class="pagination-item"><a class="paginator-link" href aria-label="Страница 4">4</a></li>
-              <li class="pagination-item-next"><a class="paginator-link page-next" href>Вперед</a></li>
+              <li class="pagination-item"><a class="paginator-link" href="#" aria-label="Страница 2">2</a></li>
+              <li class="pagination-item"><a class="paginator-link" href="#" aria-label="Страница 3">3</a></li>
+              <li class="pagination-item"><a class="paginator-link" href="#" aria-label="Страница 4">4</a></li>
+              <li class="pagination-item-next"><a class="paginator-link page-next" href="#">Вперед</a></li>
             </ul>
           </div>
         </div>
