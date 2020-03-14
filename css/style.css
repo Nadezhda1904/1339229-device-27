@@ -379,6 +379,7 @@ body {
 
   width: 1160px;
   min-height: 157px;
+  height: auto;
 
   line-height: 36px;
 
@@ -401,6 +402,7 @@ body {
 
   width: 1160px;
   min-height: 157px;
+  height: auto;
 
   line-height: 36px;
 
@@ -622,7 +624,7 @@ body {
 
 .toggle-list {
   position: absolute;
-  top: 330px;
+  bottom: 155px;
   left: 785px;
   z-index: 20;
   display: -webkit-box;
@@ -632,7 +634,6 @@ body {
   -ms-flex-pack: start;
   justify-content: start;
   padding-left: 155px;
-  padding-top: 6px;
 }
 
 .toggle-list label {
@@ -828,10 +829,6 @@ body {
   list-style: none;
 }
 
-.services-link-button:focus {
-  outline: 3px solid #bbd7f1;
-}
-
 .services-container .services-description {
   padding-left: 117px;
   padding-top: 75px;
@@ -923,13 +920,13 @@ body {
   padding-left: 35px;
 }
 
-#services-one:checked~.services-container .button:nth-child(1)::before,
-#services-two:checked~.services-container .button:nth-child(2)::before,
-#services-three:checked~.services-container .button:nth-child(3)::before,
-#services-one:active~.services-container .button:nth-child(1)::before,
-#services-two:active~.services-container .button:nth-child(2)::before,
-#services-three:active~.services-container .button:nth-child(3)::before {
-  background-color: transparent;
+#services-one:checked~.services-container label[for="services-one"]::before,
+#services-two:checked~.services-container label[for="services-two"]::before,
+#services-three:checked~.services-container label[for="services-three"]::before,
+#services-one:active~.services-container label[for="services-one"]::before,
+#services-two:active~.services-container label[for="services-two"]::before,
+#services-three:active~.services-container label[for="services-three"]::before {
+  display: none
 }
 
 #services-one:focus~.services-container label[for="services-one"],
@@ -2048,6 +2045,8 @@ input:focus~.form-radio::before {
   display: flex;
   margin: 0px;
   padding: 0px;
+
+  max-width: 510px;
 
   list-style: none;
 }
