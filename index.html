@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize-mini.css" rel="stylesheet">
+  <link href="css/style-mini.css" rel="stylesheet">
 </head>
 
 <body>
@@ -77,9 +77,9 @@
               <a class="button slider-button" href="catalog.html">Подробнее</a>
               <table class="slider-table">
                 <tr>
-                  <td class="slaider-td">8,5 м</td>
-                  <td class="slaider-td">5 кг</td>
-                  <td class="slaider-td">Карбон</td>
+                  <td class="slider-td">8,5 м</td>
+                  <td class="slider-td">5 кг</td>
+                  <td class="slider-td">Карбон</td>
                 </tr>
                 <tr>
                   <th class="slider-th">Длина палки</th>
@@ -100,7 +100,7 @@
               <a class="button slider-button" href="catalog.html">Подробнее</a>
               <table class="slider-table">
                 <tr>
-                  <td class="slaider-td">48 часов</td>
+                  <td class="slider-td">48 часов</td>
                 </tr>
                 <tr>
                   <th class="slider-th">Без подзарядки</th>
@@ -113,14 +113,14 @@
             <img class="copter" src="img/slider-quadrocopter.png" width="526" height="334" alt="Квадрокоптер">
             <div class="slider-discription slider-copter">
               <p class="slider-number slider-number-three"> 03 </p>
-              <h2>Порхает как бабочка,<br> жалит как пчела!</h2>
+              <h2>Порхает как бабочка, жалит как пчела!</h2>
               <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен
                 мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="button slider-button" href="catalog.html">Подробнее</a>
               <table class="slider-table">
                 <tr>
-                  <td class="slaider-td">800 м</td>
-                  <td class="slaider-td">50 м</td>
+                  <td class="slider-td">800 м</td>
+                  <td class="slider-td">50 м</td>
                 </tr>
                 <tr>
                   <th class="slider-th">Дальность полета</th>
@@ -134,6 +134,7 @@
     </section>
 
     <section class="catalog">
+      <h2 class="visually-hidden">Каталог товаров</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <a class="catalog-link" href="#">
@@ -230,47 +231,37 @@
     </section>
 
     <section class="services">
+      <h2 class="visually-hidden">Сервис</h2>
       <input class="visually-hidden button-input-radio" type="radio" name="services-radio" id="services-one" checked>
       <input class="visually-hidden button-input-radio" type="radio" name="services-radio" id="services-two">
       <input class="visually-hidden button-input-radio" type="radio" name="services-radio" id="services-three">
-
       <div class="services-container">
-
         <div class="services-control">
           <label class="button services-link-button" for="services-one">Доставка</label>
           <label class="button services-link-button" for="services-two">Гарантия</label>
           <label class="button services-link-button" for="services-three">Кредит</label>
         </div>
-
         <ul class="services-description">
           <li class="services-description-item slide services-delivery" id="delivery">
-            <div class="services-delivery">
-              <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </div>
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
           <li class="services-description-item slide services-guarantee" id="guarantee">
-            <div class="services-delivery">
-              <h2>Гарантия</h2>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.</p>
-            </div>
+            <h2>Гарантия</h2>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+              новый.<br>
+              Товар, не дом, конечно же.</p>
           </li>
           <li class="services-description-item slide services-credit" id="credit">
-            <div class="services-delivery">
-              <h2>Кредит</h2>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                условия кредита. Выгодные для нашего банка, разумеется.</p>
-            </div>
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные
+              консультанты подберут для вас наиболее выгодные
+              условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
         </ul>
-
       </div>
-
     </section>
-
-
     <section class="brands-product">
       <h2 class="visually-hidden">Бренды, которые представлены в интернет-магазине Device</h2>
       <ul class="brands-product-list">
@@ -320,7 +311,8 @@
         <p>Вы можете забрать товар сами, заехав в наш офис.
           Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a class="contacts-map-link" href="#">
-          <img class="contacts-map" src="img/map.png" width="560" height="222" alt="Адрес на карте: Москва, ул. Строителей, д.15">
+          <img class="contacts-map" src="img/map.png" width="560" height="222"
+            alt="Адрес на карте: Москва, ул. Строителей, д.15">
         </a>
         <a class="contacts-button button" href="writeus.html">Напишите нам</a>
       </section>
@@ -332,7 +324,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.527429315825636!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sth!4v1582899913533!5m2!1sru!2sth"
         width="960" height="559" allowfullscreen="">
       </iframe>
-      <p><img src="img/map-big.jpg" width="960" height="559" alt="Адрес магазина: г. Москва, ул.Строителей, д.15"></p>
+      <img src="img/map-big.jpg" width="960" height="559" alt="Адрес магазина: г. Москва, ул.Строителей, д.15">
       <button class="modal-close" type="button">Закрыть</button>
     </div>
 
@@ -371,7 +363,7 @@
         </ul>
       </div>
       <div class="footer-nav">
-        <p class="footer-text">г. Москва, ул. Строителей, 15</p>
+        <address class="footer-text">г. Москва, ул. Строителей, 15</address>
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
             <a class="footer-nav-link" href="">Доставка</a></li>
@@ -385,16 +377,16 @@
       <div class="social">
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link  icon-fb" href="">Facebook</a>
+            <a class="social-link  icon-fb" href="#">Facebook</a>
           </li>
           <li class="social-item">
-            <a class="social-link  icon-inst" href="">Instagram</a>
+            <a class="social-link  icon-inst" href="#">Instagram</a>
           </li>
-          <li class="ssocial-item ">
-            <a class="social-link  icon-tw" href="">Twitter</a>
+          <li class="social-item">
+            <a class="social-link  icon-tw" href="#">Twitter</a>
           </li>
         </ul>
-        <a class="footer-academy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <a class="footer-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <svg class="footer-academy-logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"
             viewBox="0 0 26.943 34.09">
             <path fill="#ffc600"
@@ -407,7 +399,7 @@
     </div>
 
   </footer>
-  <script src="js/modal.js"></script>
+  <script src="js/modal-mini.js"></script>
 </body>
 
 </html>

@@ -48,7 +48,7 @@ close.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
   popup.classList.remove("modal-error");
-   for (var i = 0; i < input.length; i++) {
+  for (var i = 0; i < input.length; i++) {
     if (input[i].value === "") {
       evt.preventDefault();
       input[i].classList.add("modal-error-input");

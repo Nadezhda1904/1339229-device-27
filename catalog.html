@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize-mini.css" rel="stylesheet">
+  <link href="css/style-mini.css" rel="stylesheet">
 </head>
 
 <body>
@@ -88,28 +88,26 @@
               <legend>Цвет</legend>
               <ul class="color-list">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="black"
-                    id="filter-black" checked>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="black" id="filter-black"
+                    checked>
                   <label class="form-check" for="filter-black">Черный</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="white"
-                    id="filter-white">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="white" id="filter-white">
                   <label class="form-check" for="filter-white">Белый</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="blue"
-                    id="filter-blue" checked>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="blue" id="filter-blue"
+                    checked>
                   <label class="form-check" for="filter-blue">Синий</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="red"
-                    id="filter-red" checked>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="red" id="filter-red"
+                    checked>
                   <label class="form-check" for="filter-red">Красный</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pink"
-                    id="filter-pink">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
                   <label class="form-check" for="filter-pink">Розовый</label>
                 </li>
               </ul>
@@ -119,13 +117,13 @@
               <legend>Bluetooth</legend>
               <ul class="bluetooth-list">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth"
-                    value="have" id="filter-have" checked>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth" value="have"
+                    id="filter-have" checked>
                   <label class="form-radio" for="filter-have">Есть</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth"
-                    value="no-have" id="filter-no-have">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth" value="no-have"
+                    id="filter-no-have">
                   <label class="form-radio" for="filter-no-have">Нет</label>
                 </li>
               </ul>
@@ -189,7 +187,7 @@
             <li class="products-item">
               <div class="products-card">
                 <img src="img/product-second.png" width="360" height="379"
-                  alt="Карточка товара Любительская селфи-палка»">
+                  alt="Карточка товара Профессиональная селфи-палка»">
                 <div class="products-option">
                   <button class="products-basket-button button" type="button">В корзину</button>
                   <button class="products-compare-link link" type="button">Добавить к сравнению</button>
@@ -206,7 +204,7 @@
             <li class="products-item">
               <div class="products-card">
                 <img src="img/product-three.png" width="360" height="379"
-                  alt="Карточка товара Любительская селфи-палка»">
+                  alt="Карточка товара Непотопляемая селфи-палка»">
                 <div class="products-option">
                   <button class="products-basket-button button" type="button">В корзину</button>
                   <button class="products-compare-link link" type="button">Добавить к сравнению</button>
@@ -223,7 +221,7 @@
             <li class="products-item">
               <div class="products-card products-card-new">
                 <img src="img/product-four.png" width="360" height="379"
-                  alt="Карточка товара Любительская селфи-палка»">
+                  alt="Карточка товара Селфи-палка «Следуй за мной»">
                 <div class="products-option">
                   <button class="products-basket-button button" type="button">В корзину</button>
                   <button class="products-compare-link link" type="button">Добавить к сравнению</button>
@@ -240,13 +238,24 @@
 
           <div class="pagination">
             <ul class="pagination-list">
-              <li class="pagination-item-prev"><a class="paginator-link page-prev" href="#">Назад</a></li>
-              <li class="pagination-item"><a class="paginator-link paginator-link-current" href="#"
-                  aria-label="Страница 1">1</a></li>
-              <li class="pagination-item"><a class="paginator-link" href="#" aria-label="Страница 2">2</a></li>
-              <li class="pagination-item"><a class="paginator-link" href="#" aria-label="Страница 3">3</a></li>
-              <li class="pagination-item"><a class="paginator-link" href="#" aria-label="Страница 4">4</a></li>
-              <li class="pagination-item-next"><a class="paginator-link page-next" href="#">Вперед</a></li>
+              <li class="pagination-item-prev">
+                <a class="paginator-link page-prev" href="#">Назад</a>
+              </li>
+              <li class="pagination-item">
+                <a class="paginator-link paginator-link-current" href="#" aria-label="Страница 1">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="paginator-link" href="#" aria-label="Страница 2">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="paginator-link" href="#" aria-label="Страница 3">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="paginator-link" href="#" aria-label="Страница 4">4</a>
+              </li>
+              <li class="pagination-item-next">
+                <a class="paginator-link page-next" href="#">Вперед</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -262,17 +271,22 @@
           <img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип DEVICE">
         </a>
         <ul class="footer-users-list footer-inner">
-          <li class="users-footer-item"><a class="users-footer-link users-footer-link-enter" href="profile.html">Валентин
-              Петухов</a></li>
-          <li class="users-footer-item"><a class="users-footer-link users-link-exit" href="#">Выйти</a></li>
+          <li class="users-footer-item">
+            <a class="users-footer-link users-footer-link-enter" href="profile.html">Валентин Петухов</a>
+          </li>
+          <li class="users-footer-item">
+            <a class="users-footer-link users-link-exit" href="#">Выйти</a>
+          </li>
           <li class="users-footer-item users-footer-item-compare">
             <a class="users-footer-link users-footer-link-compare" href="#">Сравнить</a>
           </li>
-          <li class="users-footer-item"><a class="users-footer-link users-footer-link-cart" href="#">Корзина</a></li>
+          <li class="users-footer-item">
+            <a class="users-footer-link users-footer-link-cart" href="#">Корзина</a>
+          </li>
         </ul>
       </div>
       <div class="footer-nav">
-        <p class="footer-text">г. Москва, ул. Строителей, 15</p>
+        <address class="footer-text">г. Москва, ул. Строителей, 15</address>
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
             <a class="footer-nav-link" href="">Доставка</a></li>
@@ -286,16 +300,16 @@
       <div class="social">
         <ul class="social-list  list  flex">
           <li class="social-item">
-            <a class="social-link  icon-fb" href="">Facebook</a>
+            <a class="social-link  icon-fb" href="#">Facebook</a>
           </li>
           <li class="social-item">
-            <a class="social-link  icon-inst" href="">Instagram</a>
+            <a class="social-link  icon-inst" href="#">Instagram</a>
           </li>
           <li class="ssocial-item ">
-            <a class="social-link  icon-tw" href="">Twitter</a>
+            <a class="social-link  icon-tw" href="#">Twitter</a>
           </li>
         </ul>
-        <a class="footer-academy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <a class="footer-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <svg class="footer-academy-logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"
             viewBox="0 0 26.943 34.09">
             <path fill="#ffc600"
@@ -304,9 +318,7 @@
           </svg>
         </a>
       </div>
-
     </div>
-
   </footer>
 
 </body>
